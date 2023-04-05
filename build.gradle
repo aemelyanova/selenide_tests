@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.amelyanova333'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation (
+            "com.codeborne:selenide:6.12.4",
+            "org.junit.jupiter:junit-jupiter:5.8.1",
+            "org.slf4j:slf4j-simple:1.7.29")
+}
+
+test {
+    useJUnitPlatform()
+}
