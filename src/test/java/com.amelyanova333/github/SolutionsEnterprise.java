@@ -13,7 +13,7 @@ public class SolutionsEnterprise {
         open("https://github.com/");
 
         // Выберите меню Solutions -> Enterprize с помощью команды hover для Solutions.
-        $("li.HeaderMenu-item").sibling(0).hover();
+        $(".Header-old").$(byText("Solutions")).click();
         $(".border-bottom").$(byText("Enterprise")).click();
 
         // Убедитесь что загрузилась нужная страница (например что заголовок - "Build like the best."
